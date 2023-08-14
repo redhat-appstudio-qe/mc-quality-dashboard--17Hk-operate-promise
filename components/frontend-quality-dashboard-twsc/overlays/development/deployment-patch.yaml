@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-twsc
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ktza-tenant/mc-quality-dashboard/frontend-quality-dashboard-twsc@sha256:789fc7ae75b6987371582c4200df3129a40489735777699d7ec4702101dcb7f4
+        name: container-image
+        resources: {}
+status: {}
